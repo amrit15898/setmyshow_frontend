@@ -1,0 +1,11 @@
+#linktag{
+    text-decoration: none;
+    color: black;
+}
+img{
+    padding: 20px;
+    width: 200px;
+}
+.card{
+    margin-bottom: 20px;
+}
