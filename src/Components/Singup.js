@@ -11,7 +11,7 @@ export default function Singup() {
 
     const password = event.target.password.value;
     console.log(password)
-    axios.post("http://127.0.0.1:8000/account/get-users",{
+    axios.post("http://127.0.0.1:8000/account/get-users/",{
       username, password
     }).then((response) => {
       console.log(response)

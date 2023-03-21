@@ -1,20 +1,35 @@
-import React from "react";
+import React, { useState, createContext } from "react";
 import { Link } from 'react-router-dom'
 import Main from './Main.css'
+import ShowUser from "./ShowUser";
+export const DataContext = createContext(null);
+
 export default function FrontPage() {
+  
   const style = {
     width: "18rem",
+    margin: "px"
   };
   const img_style = {
     width: "100px",
     margin: "auto",
   };
- 
+  const divstyle = {
+    display : "flex",
+  
+  }
+  const  innnerDiv = {
+    
+  }
+  const [name, setName] = useState("amrit");
+  
   return (
+    
     <div>
-      <div class="container mt-5">
-        <div className="row">
-          <div className="col-sm-4">
+     
+      <div className="maindiv">
+        <div className="box">
+          <div>
            <Link to="/signup" id="linktag"> <div class="card" style={style}>
               <img
                 class="card-img-top"
@@ -32,7 +47,7 @@ export default function FrontPage() {
               
             </div></Link>
           </div>
-          <div className="col-sm-4">
+          <div>
             <div class="card" style={style}>
               <img
                 class="card-img-top"
@@ -50,7 +65,7 @@ export default function FrontPage() {
               </div>
             </div>
           </div>
-          <div className="col-sm-4">
+          <div>
             <div class="card" style={style}>
               <img
                 class="card-img-top"
@@ -69,6 +84,9 @@ export default function FrontPage() {
           </div>
         </div>
       </div>
+     
+    
+    
     </div>
   );
 }
