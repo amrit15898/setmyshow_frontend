@@ -12,7 +12,7 @@ export default function ShowUser() {
   useEffect(() => {
     const token = localStorage.getItem('token')
 
-    axios.get("http://127.0.0.1:8000/account/get-users",{
+    axios.get("http://192.168.1.10:8000/account/get-users",{
       headers: {
         Authorization: `Bearer ${token}`
       }
