@@ -1,0 +1,26 @@
+.linktag{
+    text-decoration: none;
+    color: black;
+}
+img{
+    padding: 20px;
+    width: 200px;
+}
+.card{
+    margin-bottom: 20px;
+}
+.maindiv{
+    margin: 50px    ;
+}
+button{
+    background-color: rgb(252,220,0);
+    text-align: center;
+}
+
+.card-body{
+    text-align: center;
+}
+.btndiv{
+    text-align: center;
+
+}
