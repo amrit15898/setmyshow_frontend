@@ -80,7 +80,7 @@ export default function FrontPage() {
           
         </div>
         <div class="btndiv">
-          <button class="btn btn-success mt-2">Enter without login</button>
+          <Link to = "/home-page" class="btn btn-success mt-2">Enter without login</Link>
         </div>
       </div>
     </div>

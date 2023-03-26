@@ -5,8 +5,8 @@ import Signup from './Components/Singup';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import ShowUser from './Components/ShowUser';
 import PostEvent from './Components/PostEvent';
-
-
+import HomePage from './Components/HomePage';
+import Profile from './Profile';
 function App() {  
   
 
@@ -22,6 +22,10 @@ function App() {
       <Route path="/signup" element= {<Signup />} />
       <Route path='/show-users' element={<ShowUser />}/>
       <Route path='/post-event' element={<PostEvent />}/>
+      <Route path='/home-page' element={<HomePage />}/>
+      <Route path='/profile' element={<Profile />}/>
+      
+
      </Routes>
      </BrowserRouter>
     </div>
